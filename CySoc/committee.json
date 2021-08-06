@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "position": "President",
+        "name": "Christos Trapezaris",
+        "degree": "Mechanical Engineering",
+        "year": 3,
+        "contact": "ct4318@ic.ac.uk",
+        "pPhoto": "ctrapezaris1"
+    },
+    {
+        "id": 10,
+        "position": "Developer",
+        "name": "Giorgos Vyronos",
+        "degree": "Electronic and Information Engineering",
+        "year": 2,
+        "contact": "gv319@ic.ac.uk",
+        "pPhoto": "gvyronos1"
+    }
+]
