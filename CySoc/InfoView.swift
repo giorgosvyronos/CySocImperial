@@ -12,11 +12,10 @@ struct InfoView: View {
     
     var body: some View {
         List(posts){ post in
-            HStack{
-                Text("Info")
-                Text(post.name)
-                Text(post.email)
-                }
+            VStack{
+                Text(post.name).font(.headline)
+                Text(post.email).font(.subheadline).italic()
+            }
         }
         .onAppear {
             Api().getPosts { (posts) in
