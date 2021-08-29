@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct EventsView: View {
-    @State var posts: [Post] = []
+    @State var events: [Event] = []
     var body: some View {
         ZStack{
-                List(posts){ post in
+                List(events){ event in
                     VStack(alignment: .leading) {
                         HStack {
                             VStack(alignment: .leading, spacing: 5) {
-                                Text(post.title)
+                                Text(event.title)
                                         .font(.system(size: 20.0, weight: .bold, design: .rounded))
                                         
                                 HStack(alignment: .center) {
                                     Image(systemName: "link")
-                                    Text(post.note)
+                                    Text(event.link)
                                 }
                                 .font(.system(size: 16.0, weight: .medium, design: .rounded))
                                 .foregroundColor(.secondary)
@@ -36,14 +36,17 @@ struct EventsView: View {
                                 Text("Status")
                                     .font(.system(size: 16.0, weight: .medium, design: .rounded))
                                     .foregroundColor(.green)
-                                Text(post.date)
+                                Text(event.datetime)
                                     .font(.system(size: 16.0, weight: .medium, design: .rounded))
                                     .foregroundColor(Color(.blue))
+                                Text(event.text)
+                                    .font(.system(size: 16.0, weight: .medium, design: .rounded))
+                                    .foregroundColor(Color(.black))
                             }
                             Spacer()
                             VStack {
                                 Image(systemName: "location")
-                                Text("568 Bar")
+                                Text(event.location)
                             }
                             .font(.system(size: 16.0, weight: .medium, design: .rounded))
                         }
@@ -57,14 +60,13 @@ struct EventsView: View {
                 }
                 
                 .onAppear {
-                    Api().getPosts { (posts) in
-                        self.posts = posts
+                    EventApi().getEvents { (events) in
+                        self.events = events
                     }
                 }
                 
                 
             }
-        //}
             .navigationTitle(Text("Events"))
     }
 }
