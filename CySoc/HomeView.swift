@@ -64,10 +64,10 @@ struct HomeView: View {
                 
                     NavigationLink(destination: LocationsView()){
                         VStack{
-                            Image(systemName: "bed.double.fill")
+                            Image(systemName: "house.circle.fill")
                                 .resizable()
                                 .scaledToFit()
-                            Text("Dating")
+                            Text("Housing")
                         }
                     }
                 NavigationLink(destination: EmptyView()){

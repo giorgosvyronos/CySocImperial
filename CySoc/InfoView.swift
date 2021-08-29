@@ -13,8 +13,8 @@ struct InfoView: View {
     var body: some View {
         List(posts){ post in
             VStack{
-                Text(post.name).font(.headline)
-                Text(post.email).font(.subheadline).italic()
+                Text(post.title).font(.headline)
+                Text(post.date).font(.subheadline).italic()
             }
         }
         .onAppear {

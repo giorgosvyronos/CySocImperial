@@ -10,13 +10,14 @@ import Foundation
 
 struct Post: Codable, Identifiable {
     let id = UUID()
-    var name: String       // renamed latitute
-    var email: String        // renamed longtitude
+    var title: String       // renamed latitute
+    var date: String        // renamed longtitude
+    var note: String
 }
  
 class Api {
     func getPosts(completion: @escaping ([Post]) -> ()) {
-        guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {return}
+        guard let url = URL(string: "http://192.168.10.13:8081/fetch") else {return}
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let posts = try! JSONDecoder().decode([Post].self, from: data!)

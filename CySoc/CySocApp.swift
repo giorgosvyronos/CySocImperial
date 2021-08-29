@@ -18,7 +18,7 @@ struct CySocApp: App {
                     HomeView()
                 }
                 .tabItem{
-                    Image(systemName: "house.circle.fill")
+                    Image(systemName: "hexagon.fill")
                     Text("Home")
                 }
                 
