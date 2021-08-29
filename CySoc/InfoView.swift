@@ -11,20 +11,7 @@ struct InfoView: View {
     @State var posts: [Post] = []
     
     var body: some View {
-        List(posts){ post in
-            VStack{
-                Text(post.title).font(.headline)
-                Text(post.date).font(.subheadline).italic()
-            }
-        }
-        .onAppear {
-            Api().getPosts { (posts) in
-                self.posts = posts
-            }
-        }
-        
-            
-            
+        Text("Info Static")
             .navigationTitle(Text("Information"))
     }
 }

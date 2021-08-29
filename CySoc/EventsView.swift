@@ -39,7 +39,7 @@ struct EventsView: View {
                                 Text(event.datetime)
                                     .font(.system(size: 16.0, weight: .medium, design: .rounded))
                                     .foregroundColor(Color(.blue))
-                                Text(event.text)
+                                Text(event.datetime)
                                     .font(.system(size: 16.0, weight: .medium, design: .rounded))
                                     .foregroundColor(Color(.black))
                             }
