@@ -11,6 +11,6 @@ var house = new Schema({
 })
 
 
-const House = mongoose.model("data", house)
+const House = mongoose.model("housing", house)
 
 module.exports = House

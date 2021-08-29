@@ -10,6 +10,6 @@ var announcement = new Schema({
 })
 
 
-const Announcement = mongoose.model("data", announcement)
+const Announcement = mongoose.model("announcement", announcement)
 
 module.exports = Announcement

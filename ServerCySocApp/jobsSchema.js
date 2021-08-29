@@ -10,6 +10,6 @@ var job = new Schema({
 })
 
 
-const Job = mongoose.model("data", job)
+const Job = mongoose.model("job", job)
 
 module.exports = Job

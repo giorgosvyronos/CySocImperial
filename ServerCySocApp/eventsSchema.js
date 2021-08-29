@@ -11,6 +11,6 @@ var event = new Schema({
 })
 
 
-const Event = mongoose.model("data", event)
+const Event = mongoose.model("event", event)
 
 module.exports = Event

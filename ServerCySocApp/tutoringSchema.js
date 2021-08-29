@@ -11,6 +11,6 @@ var tutor = new Schema({
 })
 
 
-const Tutor = mongoose.model("data", tutor)
+const Tutor = mongoose.model("tutoring", tutor)
 
 module.exports = Tutor

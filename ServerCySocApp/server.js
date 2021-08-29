@@ -25,7 +25,7 @@ mongoose.connection.once("open", () => {
 
 })
 
-
+//==================================CREATE==============================//
 // CREATE A NOTE -- POST request
 app.post("/create", (req, res) => {
 
@@ -45,8 +45,26 @@ app.post("/create", (req, res) => {
     })
 })
 
+// CREATE AN EVENT -- POST request
+app.post("/events/create", (req, res) => {
 
+    var event = new Event ({
+        title: req.get("title"),
+        datetime: req.get("datetime"),
+        location: req.get("location"),
+        text: req.get("text"),
+        link: req.get("link")
+    })
 
+    event.save().then(() => {
+        if(event.isNew == false){
+            console.log("Saved event data!")
+            res.send("Saved event data!")
+        }else{
+            console.log("Failed to save event data!")
+        }
+    })
+})
 
 
 
@@ -74,6 +92,23 @@ app.post("/delete", (req,res) => {
     res.send("Deleted!")
 })
 
+// DELETE AN EVENT -- POST request
+
+app.post("/events/delete", (req,res) => {
+    Event.findOneAndRemove({
+        _id: req.get("id")
+    },(err) => {
+        if(err){
+        console.log("Failed to delete event" + err)
+        }else{
+            console.log("Event Deleted!")
+        }
+    })
+    res.send("Event Deleted!")
+})
+
+
+
 
 
 // UPDATE A NOTE -- POST request
@@ -95,11 +130,41 @@ app.post("/update", (req,res) => {
     res.send("Updated!")
 })
 
+// UPDATE AN EVENT -- POST request
+app.post("/events/update", (req,res) => {
+    Event.findOneAndUpdate({
+        _id: req.get("id")
+    },{
+        title: req.get("title"),
+        datetime: req.get("datetime"),
+        location: req.get("location"),
+        text: req.get("text"),
+        link: req.get("link")
+
+    },(err) => {
+        if(err){
+        console.log("Failed to update event " + err)
+        }else{
+            console.log("Event Updated!")
+        }
+    })
+    res.send("Event Updated!")
+})
+
+
+
 
 
 //FETCH ALL NOTES -- GET request
 app.get('/fetch', (req,res) => {
     Data.find({}).then((DBitems) =>{
+        res.send(DBitems)
+    })
+})
+
+//FETCH ALL EVENTS -- GET request
+app.get('/events/fetch', (req,res) => {
+    Event.find({}).then((DBitems) =>{
         res.send(DBitems)
     })
 })
