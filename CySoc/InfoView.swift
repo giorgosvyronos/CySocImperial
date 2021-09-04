@@ -11,7 +11,11 @@ struct InfoView: View {
     @State var posts: [Post] = []
     
     var body: some View {
-        Text("Info Static")
+        ScrollView{
+        Text("Moving through London")
+        Text("Subscriptions")
+                .scaledToFit()
+        }
             .navigationTitle(Text("Information"))
     }
 }

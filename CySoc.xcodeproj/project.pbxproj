@@ -17,6 +17,7 @@
 		AA35A6ED26AC644A00F16DF9 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35A6EC26AC644A00F16DF9 /* LocationsView.swift */; };
 		AA35A6EF26AC64A100F16DF9 /* abouts.json in Resources */ = {isa = PBXBuildFile; fileRef = AA35A6EE26AC64A100F16DF9 /* abouts.json */; };
 		AA35A6F126AC664A00F16DF9 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA35A6F026AC664A00F16DF9 /* About.swift */; };
+		AA750F8F26E3CCA800B60013 /* Content.txt in Resources */ = {isa = PBXBuildFile; fileRef = AA750F8E26E3CCA800B60013 /* Content.txt */; };
 		AA9A409226A43A1D002F7BA3 /* CySocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A409126A43A1D002F7BA3 /* CySocApp.swift */; };
 		AA9A409426A43A1D002F7BA3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A409326A43A1D002F7BA3 /* HomeView.swift */; };
 		AA9A409626A43A1E002F7BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9A409526A43A1E002F7BA3 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		AA35A6EC26AC644A00F16DF9 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		AA35A6EE26AC64A100F16DF9 /* abouts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = abouts.json; sourceTree = "<group>"; };
 		AA35A6F026AC664A00F16DF9 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		AA750F8E26E3CCA800B60013 /* Content.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Content.txt; sourceTree = "<group>"; };
 		AA9A408E26A43A1D002F7BA3 /* CySoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CySoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9A409126A43A1D002F7BA3 /* CySocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CySocApp.swift; sourceTree = "<group>"; };
 		AA9A409326A43A1D002F7BA3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				AAC6DBE426AB324C009FF518 /* AnnouncementView.swift */,
 				AA9A409326A43A1D002F7BA3 /* HomeView.swift */,
 				AA14DF2A26AC04BC00C5079C /* InfoView.swift */,
+				AA750F8E26E3CCA800B60013 /* Content.txt */,
 				AA14DF2826AC04AC00C5079C /* FreshersView.swift */,
 				AAC6DBE626AB36A0009FF518 /* Committee.swift */,
 				AA02270126AAE8A900480A18 /* Person.swift */,
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA9A409926A43A1E002F7BA3 /* Preview Assets.xcassets in Resources */,
+				AA750F8F26E3CCA800B60013 /* Content.txt in Resources */,
 				AA35A6EF26AC64A100F16DF9 /* abouts.json in Resources */,
 				AAC6DBE926AB36EE009FF518 /* committee.json in Resources */,
 				AAC6A8D526C18DFF00594693 /* LaunchScreen.storyboard in Resources */,
@@ -331,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CySoc/Preview Content\"";
 				DEVELOPMENT_TEAM = K75278RQ34;
@@ -353,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CySoc/Preview Content\"";
 				DEVELOPMENT_TEAM = K75278RQ34;

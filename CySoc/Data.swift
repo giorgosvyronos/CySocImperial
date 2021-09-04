@@ -42,7 +42,7 @@ struct Event: Codable, Identifiable {
  
 class EventApi {
     func getEvents(completion: @escaping ([Event]) -> ()) {
-        guard let url = URL(string: "http://192.168.10.13:8081/events/fetch") else {return}
+        guard let url = URL(string: "http://192.168.10.90:8081/events/fetch") else {return}
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let events = try! JSONDecoder().decode([Event].self, from: data!)

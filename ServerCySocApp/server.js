@@ -13,7 +13,7 @@ var Tutor = require('./tutoringSchema')
 
 
 
-mongoose.connect('mongodb://localhost/newDB')
+mongoose.connect('mongodb://40.117.251.225/newDB')
 
 mongoose.connection.once("open", () => {
     
@@ -151,7 +151,7 @@ app.post("/tutors/create", (req, res) => {
 
 
 //http://192.168.10.13:8081/create
-var server = app.listen(8081, "192.168.10.13", () => {
+var server = app.listen(8081, "40.117.251.225", () => {
     console.log("Server is running!")
 })
 

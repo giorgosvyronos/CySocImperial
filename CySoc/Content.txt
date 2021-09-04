@@ -1,0 +1,34 @@
+Content for static Views
+
+
+    ** Internal Tutoring
+        * Non-static content
+        * Include headline
+    
+    ** Committee
+        * Add rest of members as well as info
+    
+    ** Useful Info
+        * Apps
+            > Citymapper
+            > Google Maps
+            > Santander Cycles
+        * Buses, underground
+        
+        * Subscrptions, loyalty cards, oyster
+            > Tesco ClubCard
+            > Sainsbury's Necta Card
+        * Unidays, StudentBeans
+            > Discounts and promos to restaurants and shops
+    
+    ** Events
+        * Non-static content
+        * Include headline
+    
+    ** Places
+        * Non-static content
+        * Include headline
+    
+    ** Announcements
+        * Non-static content
+        * Include headline
